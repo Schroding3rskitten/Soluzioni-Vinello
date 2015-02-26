@@ -1,0 +1,23 @@
+/*Scrivere  un  programma  che  legga  da  tastiera  
+un  intero  e  stabilisca  se  ilnumero e primo.
+L'input consiste di una sola riga contente l'interox.
+Il programma stampa in output 1 sexe primo, 0 altrimenti.*/
+
+#include <iostream>
+
+using namespace std;
+
+int primo(int n){
+	for(int i=2; i<n; ++i){
+		if(n%i==0)
+			return 0;
+	}
+	return 1;
+}
+
+int main(){
+	int N;
+	cin >> N;
+	cout <<primo(N)<< endl;
+	return 0;
+}
