@@ -1,0 +1,19 @@
+/*Scrivere un programma che legga da tastiera una sequenza 
+di numeri interi terminata da 0 e ne stampi la somma.
+L'input una sequenza di numeri interi terminata da 0, 
+un intero per riga. 
+Il programma stampa in output la somma degli interi.*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int N, S=0;
+	while(N!=0){
+		cin >> N;
+		S += N; 
+	}
+	cout << S;
+	return 0;
+}
