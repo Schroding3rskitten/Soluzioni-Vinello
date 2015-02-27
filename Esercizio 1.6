@@ -1,0 +1,25 @@
+/*implementare la funzione swap(int *a, int *b)che scambi il contenutodelle due variabili.
+Scrivere poi un programma che legga da input il valore di due varia-bili intereaebe utilizzi 
+la funzioneswapper scambiare i loro valori. Ilprogramma deve quindi stampare il valore di a e b
+dopo questa operazione.
+Le due righe dell'input contengono il valore di a e b.
+Le due righe dell'output contengono il valore diaebdopo lo scambio.*/
+
+
+#include <iostream>
+
+using namespace std;
+
+void swap(int*a, int *b){
+	int *c= b;
+	b = a;
+	a = b;
+}
+
+int main(){
+	int A =1;
+	int B = 2;
+	swap(A, B);
+	cout << A << ' ' << B;
+	return 0;
+}
